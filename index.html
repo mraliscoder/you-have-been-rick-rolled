@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        #rickroll {
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <video src="./rickroll.mp4" muted autoplay id="rickroll"></video>
+    <script>
+        document.addEventListener("click", () => {
+            document.getElementById("rickroll").muted = false;
+        })
+    </script>
+</body>
+</html>
